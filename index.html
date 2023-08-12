@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Specifies the language written in -->
+<html lang="en">
+<!-- Starts the had tag -->
+<head>
+  <!-- Encodes the code using the UTF-8 encoding -->
+  <meta charset="UTF-8">
+  <!-- Presets the width of the website depending on the devices width (Phone, Pc, TV) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- links to the fontawesome which provides all the graphic designs on the page -->
+<script src="https://kit.fontawesome.com/384553e47a.js" crossorigin="anonymous"></script>
+  <!-- Links to the css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Imports the google api fonts link -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+  <!-- Sets the title of the entire web page -->
+  <title>Sticky Notes</title>
+</head>
+<body>
+<!-- Opens the main div containing all the sub divisions -->
+  <div id="main">
+    <!-- Sub-main div sets the parameters to the input area -->
+    <div id="sub-main">
+      <textarea placeholder="Please enter your note.." id="user_input" maxlength="160"></textarea>
+<!-- Sets the ID for the close button and sets its shape -->
+      <i class="fa-solid fa-circle-xmark" id="close"></i>
+    </div>
+  </div>
+
+  <main>
+
+    <header>
+      <!-- opens another div containing the header content  -->
+      <div class="container">
+        <div id="header">
+          <!-- h1 that contains the sticky notes icon and the title -->
+          <h1><i class="fa-solid fa-note-sticky"></i class="title"> Stick A Note</h1>
+          <!-- The button for adding a new note and its id -->
+          <button id="new-note">Add a new note</button>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <!-- another div called container -->
+      <span class="container">
+        <!-- the id for the already published notes for the css section -->
+        <span contenteditable="true" id="stuck-notes"></span>
+      </span>
+    </section>
+
+</div>
+<!-- start of the right click context menu -->
+<ul class="context-menu">
+  <!-- the delete button located in the right click menu -->
+		<li><a id="delete" href="#"><i class='bx bx-cut'></i> Delete</a></li>
+    <!-- End of the list  -->
+	</ul>
+  </main>
+  <!-- Links to the java script part of the code -->
+  <script src="script.js"></script>
+</body>
+</html>
